@@ -2,7 +2,7 @@
 
 Shader Showdown: 2 participants, 25 minutes, live coding the best visual effect.
 
-[Video on YouTube](https://youtu.be/neGnsHQbTsY)
+[Video on YouTube](https://youtu.be/TZeZ3Mmi4VY)
 
 * Round 1: Anton vs Eybor
 * Round 2: Flopine vs wsmind
