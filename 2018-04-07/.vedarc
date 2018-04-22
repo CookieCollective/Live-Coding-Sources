@@ -1,0 +1,12 @@
+{
+  "IMPORTED": {
+    "guinness": {
+      "PATH": "./guinness.png",
+    },
+  },
+  "pixelRatio": 1,
+  "audio": true,
+  "camera": true,
+  "keyboard": false,
+  "midi": false,
+}
