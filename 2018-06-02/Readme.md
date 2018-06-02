@@ -1,4 +1,4 @@
-# Shader Showdown Paris #3
+# Shader Showdown @ VIP 2018
 
 On June 2th, 2018 during the [VIP 2018](http://vip2018.popsyteam.org/) at Thoissey, France.
 
