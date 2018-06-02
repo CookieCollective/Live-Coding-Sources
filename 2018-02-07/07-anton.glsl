@@ -1,0 +1,79 @@
+#version 410 core
+
+uniform float fGlobalTime; // in seconds
+uniform vec2 v2Resolution; // viewport resolution (in pixels)
+
+uniform sampler1D texFFT; // towards 0.0 is bass / lower freq, towards 1.0 is higher / treble freq
+uniform sampler1D texFFTSmoothed; // this one has longer falloff and less harsh transients
+uniform sampler1D texFFTIntegrated; // this is continually increasing
+uniform sampler2D texChecker;
+uniform sampler2D texNoise;
+uniform sampler2D texTex1;
+uniform sampler2D texTex2;
+uniform sampler2D texTex3;
+uniform sampler2D texTex4;
+
+layout(location = 0) out vec4 out_color; // out_color must be written in order to see anything
+
+mat2 rot(float a)
+{
+float c = cos(a); float s = sin(a);
+return mat2(c,-s,s,c);
+}
+
+
+float map(vec3 pos)
+{
+  float sph = length(pos) - 1.;
+  float pla = pos.y + 1. + sin(pos.z - fGlobalTime)*.1;
+
+  pos.x = abs(pos.x);
+  pos.z += fGlobalTime * 2. + (sin(fGlobalTime * 3.14159 ) * .5 + .5) * .1;
+  pos.z = mod(pos.z + 2., 4.) - 2.;
+  pos.x -= 3.;
+
+  pos.xy *= rot(-.65);
+  
+
+  float cy = length(pos.xz) - .25;
+
+  return min(min(sph, pla),cy);
+}
+
+
+float rayCast(vec3 ro,vec3 rd)
+{
+  vec3 cp = ro;
+
+  float s = 0.;
+
+  for(;s < 1.; s += 1. / 64.)
+  {
+    float cd = map(cp);
+    if(cd < .01)
+      break;
+    cp += cd * rd * .75;
+  }
+  return s;
+}
+
+void main(void)
+{
+  vec2 uv = vec2(gl_FragCoord.x / v2Resolution.x, gl_FragCoord.y / v2Resolution.y);
+  uv -= 0.5;
+  uv /= vec2(v2Resolution.y / v2Resolution.x, 1);
+
+  vec3 ro = vec3(0.,2.,-10.);
+  vec3 rd = vec3(uv,1.);
+  rd.yz *= rot(.1);
+
+  float beat = exp(-mod(fGlobalTime * 10., 10.));
+
+  beat *= .05;
+  float r = rayCast(ro, rd + vec3(1.) * beat);
+  float g = rayCast(ro, rd + vec3(1.,-1.,1.) * beat);
+  float b = rayCast(ro, rd + vec3(1.,1.,-1.) * beat);
+  float f = 1. - rayCast(ro, rd);
+  out_color =  vec4(r,g,b,1.);
+  out_color = out_color * sin(fGlobalTime) * .5 + .5;
+}
