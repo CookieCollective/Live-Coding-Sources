@@ -1,4 +1,4 @@
-# Shader Showdown Paris #3
+# Shader Showdown Paris #6
 
 On November 25th, 2017 at [Nogozon](https://www.facebook.com/nogozon/).
 
