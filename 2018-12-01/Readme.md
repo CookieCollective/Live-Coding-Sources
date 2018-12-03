@@ -1,6 +1,10 @@
-# Shader Showdown Paris
+# Shader Showdown @ Cookie Demoparty 2018
 
 On November 30th & December 1st, 2018 during the [Cookie Demoparty](http://cookie.paris/) at [La Folie Numérique](http://folie-numerique.fr/).
+
+Nusan is selected to participate to the Grand Final at Revision 2019!
+
+Thanks to Havoc for organizing the Shader Showdown.
 
 ## Rounds
 
