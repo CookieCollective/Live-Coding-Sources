@@ -4,15 +4,15 @@ On November 30th, 2019 during the [GROW Festival](https://www.grow.paris/) at [L
 
 ## Rounds
 
-1. Anton vs 
-2. Kidou & Greckow vs 
-3. Nicoptere vs 
-4. SixClone vs 
-5. flopine vs 
-6. nusan vs 
-7. novac vs 
-8. anton vs 
-9. ponk vs 
+1. Anton vs Lamogui
+2. Kidou & Greckow vs Ponk
+3. Nicoptere vs Franzybily
+4. SixClone vs col1
+5. flopine vs gaxil
+6. nusan vs lsdlive
+7. novac vs monollonom & bg
+8. anton vs hotdogstudio
+9. ponk vs balec
 
 ## Tournament view
 
