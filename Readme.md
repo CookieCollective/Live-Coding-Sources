@@ -1,3 +1,3 @@
-# Shaders
+# Live Coding Sources
 
-Collection of shaders written during the events (e.g. Cookie Parties, live coding jams).
+Codes (mostly shaders) written during the events (e.g. Cookie Parties, live coding jams).
