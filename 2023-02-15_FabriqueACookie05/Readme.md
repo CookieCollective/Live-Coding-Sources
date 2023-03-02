@@ -5,11 +5,14 @@ On February 15th 2023 on [La fabrique à cookie 05](https://fb.me/e/2C2EVX0sL).
 ## Shaders
 
 Leon
-<!-- ![](Missing a picture :( )) -->
+![](https://raw.githubusercontent.com/CookieCollective/Live-Coding-Sources/master/2023-02-15_FabriqueACookie05/Leon1.png)
 z0rg
 ![](https://raw.githubusercontent.com/CookieCollective/Live-Coding-Sources/master/2023-02-15_FabriqueACookie05/z0rg.png)
 lsdlive
 
+## Sound
+Jules Cipher
+Azertype
 
 ## Software
 - [Atom](https://github.com/atom/atom)
