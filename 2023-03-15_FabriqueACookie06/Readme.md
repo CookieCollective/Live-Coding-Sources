@@ -1,6 +1,6 @@
 # Performances
 
-On March 15th 2023 on [La fabrique à cookie 05](https://fb.me/e/3sl7Kb5me).
+On March 15th 2023 on [La fabrique à cookie 06](https://fb.me/e/3sl7Kb5me).
 
 ## Shaders
 
